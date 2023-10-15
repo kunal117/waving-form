@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: steelblue;
+  background-color: #793fdf;
   color: #fff;
   font-family: "Muli", sans-serif;
   display: flex;
@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: #7091f5;
   padding: 20px 40px;
   border-radius: 5px;
 }
@@ -26,6 +26,8 @@ body {
 .container h1 {
   text-align: center;
   margin-bottom: 30px;
+  letter-spacing: 2px;
+  color: #232d3f;
 }
 .container a {
   text-decoration: none;
@@ -47,4 +49,38 @@ body {
   padding: 15px 0;
   font-size: 18px;
   color: #fff;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+  outline: 0;
+  border-bottom-color: #232d3f;
+}
+
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  color: #232d3f;
+  transform: translateY(-30px);
+}
+
+.btn {
+  border-style: none;
+  border-radius: 8px;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  background-color: #232d3f;
+  color: white;
 }
